@@ -1,10 +1,12 @@
-# Tutorial 2 Configuration d'Ansible.  
+# Tutorial 3 Création du premier playbook.    
 ## Table des matières
 - [Objectifs](#objectifs)  
 - [Ressources](#ressources)
 - [Pré-Requis](#pré-requis)  
 ## Objectifs  
-Pour notre premier TP, nous allons travailler avec un template de projet. (simple cad sans utiliser les rôles).
+Dans ce TP ,nous allons créer notre premier playbook.
+Un playbook permet de regrouper des tâches à réaliser sur nos machines hôtes.
+Nous allons utiliser avec un template de projet. (simple cad sans utiliser les rôles).
 Cela nous permettra de nous familiariser avec les concepts clés d'Ansible.
 
 Ainsi nous allons : 
@@ -14,7 +16,7 @@ Ainsi nous allons :
 - Utiliser la commande doc pour afficher la liste des modules disponibles.
 - Retrouver la documentation du module debug.
 - 	
-## Ressources
+## Ressources 
 - Environnement 
 - Temps : 60 mn.
 ## Pré-Requis

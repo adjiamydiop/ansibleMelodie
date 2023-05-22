@@ -25,8 +25,8 @@ Dans la seconde partie consacrée plus spécifiquement à l'IBMi, nous allons no
 
  - [TP01 - Mise en place du Lab](01_MiseEnPlace_LAB/README.md)
  - [TP02 - Configurer Ansible](02_ConfigurerAnsible/README.md)
- - [Exercise 1.3 - Writing Your First Playbook](1.3-playbook/README.fr.md)
- - [Exercise 1.4 - Using Variables](1.4-variables/README.fr.md)
+ - [TP03 - Écrire votre premier playbook](03_PremierPlaybook/README.md)
+ - [TP04 - Utiliser des variables]()
  - [Exercise 1.5 - Conditionals, Handlers and Loops](1.5-handlers/README.fr.md)
  - [Exercise 1.6 - Templates](1.6-templates/README.fr.md)
  - [Exercise 1.7 - Roles](1.7-role/README.fr.md)
