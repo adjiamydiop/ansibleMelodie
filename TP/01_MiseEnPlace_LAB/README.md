@@ -21,6 +21,7 @@
 
 ## Énoncé  
 1. se Connecter sur le [playGround de DiveInto](https://diveinto.com/p/playground)
+![picture 1](../../images/7ffe3c8d25c328686238ec595923c5fe41a57a3b7745a323ec88a5e77a3ccb1a.png)  
 
 1.
 ## Conclusion et feed-back  
