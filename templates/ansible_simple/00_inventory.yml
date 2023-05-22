@@ -1,0 +1,8 @@
+---
+control:
+  hosts:
+    ubuntu-c:
+      ansible_connection: local
+centos:
+  hosts:
+...
