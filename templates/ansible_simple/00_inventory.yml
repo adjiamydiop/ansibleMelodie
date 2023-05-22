@@ -5,4 +5,12 @@ control:
       ansible_connection: local
 centos:
   hosts:
+    centos1:
+ubuntu:
+  hosts:
+    ubuntu1:
+managed:
+  children:
+    centos:
+    ubuntu:
 ...
