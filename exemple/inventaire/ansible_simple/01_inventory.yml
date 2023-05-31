@@ -1,0 +1,19 @@
+---
+control:
+  hosts:
+    ubuntu-c:
+centos:
+  hosts:
+    centos1:
+    centos2:
+    centos3:
+ubuntu:
+  hosts:
+    ubuntu1:
+    ubuntu2:
+    ubuntu3:
+linux:
+  children:
+    centos:
+    ubuntu:
+...
