@@ -11,10 +11,9 @@
 - Contrôler l'environnement d'execution du lab.	
 ## Ressources
 - Environnement 
-- Temps : 30 mn.
+- Temps : 45 mn.
 ## Pré-Requis
 - Avoir un compte Google (gmail par exemple) 
-    TODO: procedure de creation de compte google.
     [créer un compte GMAIL](https://support.google.com/mail/answer/56256?hl=fr)
 - Accéder à internet.
 - Chrome 
@@ -37,12 +36,16 @@ jusqu'au message de fin ....
 ![picture 10](../../images/b40cad2235b20a6c5b4772f0ae5e0c01b9311d5f7d83a27adf9276aaaeff4ba2.png)  
 1. Ouvrir un shell sur le poste de contrôle (control node)  
 ![picture 11](../../images/def6b7c6e72206c8bdd67464a0e286b12c40bfcd0f7231dd37a9718da4f23713.png)  
-profil : ansible et mote de passe : password  
+profil : ansible et mot de passe : password  
 ![picture 12](../../images/8e9b7005f84bfca8958281ba832156f78125048d8dd7a334c2179aac84a38f5b.png)  
 1. cloner le dépôt GIT  "ansibleMelodie"  
 `git clone https://github.com/novy400/ansibleMelodie.git`  
-![picture 13](../../images/bb085135e32b1ff44736423bc12d91fd4dc2d69ea13b68e5e25e61861e8651e4.png)  
-1. lancer l’éditeur  
+![picture 13](../../images/bb085135e32b1ff44736423bc12d91fd4dc2d69ea13b68e5e25e61861e8651e4.png) 
+> vous pouvez faire un copie/coller (Ctr+C/ctrl+maj+V) mais cela rajoute des caractères à supprimer.  
+
+`ls` pour verifier 
+1. retourner le cloud shell DiveINTO et lancer l’éditeur  
+
 ![picture 14](../../images/2b52b084e35690234d76819ce60d4c633d2d1d67cdcabb0f19fc065978b25641.png)  
 1. ouvrir le fichier README.MD du noeud de contrôle ubuntu-c 
 /home/yvieville/diveintoansible-lab/ansible_home/ubuntu-c/ansible/ansibleMelodie/README.md
