@@ -6,21 +6,20 @@
 ## Objectifs  
 Dans ce TP ,nous allons créer notre premier playbook.
 Un playbook permet de regrouper des tâches à réaliser sur nos machines hôtes.
-Nous allons utiliser avec un template de projet. (simple cad sans utiliser les rôles).
-Cela nous permettra de nous familiariser avec les concepts clés d'Ansible.
 
 Ainsi nous allons : 
-- Écrire un fichier d'inventaire pour cataloguer notre infrastructure.
-- Éditer un fichier de configuration.
-- Utiliser le module Ping en mode commande pour tester notre inventaire.
-- Utiliser la commande doc pour afficher la liste des modules disponibles.
-- Retrouver la documentation du module debug.
+- Créer un playbook basique en utilisant le module ping et debug utilisé dans le TP02.
+- Le lancer.
+- Analyser les résultats.
 - 	
 ## Ressources 
 - Environnement 
 - Temps : 60 mn.
 ## Pré-Requis
-- avoir mis en place l'environnement dans cloud shell .
+- avoir mis en place l'environnement dans cloud shell.  
+    [TP01 - Mise en place du Lab](../01_MiseEnPlace_LAB/README.md01_MiseEnPlace_LAB/README.md)  
+- avoir configurer Ansible pour travailler avec notre environnement dans cloud shell.  
+    [TP02 - Configurer Ansible](../02_ConfigurerAnsible/README.md) 
 
 ## Énoncé  
 ### Etape 1 Configurer Ansible.
