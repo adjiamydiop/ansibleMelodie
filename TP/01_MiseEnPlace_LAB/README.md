@@ -87,7 +87,7 @@ vous pouvez faire un copie/coller (Ctr+C/ctrl+maj+V) mais cela rajoute des carac
 ![picture 37](../../images/6a3ec386b53dc2cf45d3a9224fe718ef5c9b1d334bdc70bb81e3c836dc039cf1.png)  
 - 😉libre cours à votre inspiration !  
 ![picture 38](../../images/867ca592336f85c9037fc325d755621a07094fced3f77532d327effe27e10b04.png)  
-
+- Sauvegarder via la touche CTRL-S.
 - contrôle dans ubuntu-c
     1. Ouvrez la console d'ubuntu-c
     ![picture 39](../../images/05912e7204c2f523b30a2d1c65d41940becd2c783bdc6efa835d8de766444b3a.png)  
