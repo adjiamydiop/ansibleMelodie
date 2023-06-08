@@ -1,0 +1,25 @@
+---
+- name: tests de notre configuration.
+  hosts: all
+  tasks:
+   - name: affichage des gather_facts
+     debug:
+      var: ansible_facts
+   - name: affichage du nom de host
+     debug:
+      var: ansible_hostname  
+   - name: "Generate HTML report"
+     template:
+      src: templates/report.html.j2
+      dest: "$HOME/{{ inventory_hostname }}.html"       
+   - name: recup fact via setup
+     setup:
+      gather_subset:
+        - 'architecture'
+        - 'distribution'
+     register: myFacts
+   - name: affichage du nom de host
+     debug:
+      var: myFacts     
+
+...

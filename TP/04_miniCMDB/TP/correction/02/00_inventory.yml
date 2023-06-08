@@ -1,0 +1,20 @@
+---
+control:
+  hosts:
+    ubuntu-c:
+      ansible_connection: local
+centos:
+  hosts:
+    centos1:
+    centos2:
+    centos3:
+ubuntu:
+  hosts:
+    ubuntu1:
+    ubuntu2:
+    ubuntu3:
+managed:
+  children:
+    centos:
+    ubuntu:
+...

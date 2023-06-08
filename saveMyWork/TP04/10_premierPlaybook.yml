@@ -1,0 +1,7 @@
+---
+- name: tests de notre configuration.
+  hosts: all
+  tasks:
+   - name: test de la connexion
+     ping:
+...
