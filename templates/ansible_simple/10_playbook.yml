@@ -1,0 +1,19 @@
+---
+# Les documents YAML commencent par le séparateur de document ---
+# Le moins (-) dans YAML indique un élément de liste.
+# Le playbook contient une liste de "jeu".
+# Chaque jeu étant un dictionnaire.
+- name: le nom de mon jeu 
+
+  # Hosts: les systèmes cibles où notre jeu s'exécutera et les options avec lesquelles il s'exécutera
+  hosts:
+  # Vars: Les variables qui s'appliqueront à ce jeu, sur tous les systèmes cibles
+
+  # Tasks: la liste des tâches qui seront exécutées dans ce jeu.
+  tasks:
+    - name: nom de la tâche
+  
+  # Handlers: la liste des manipulateurs qui sont exécutés en tant que clé de notification d'une tâche.
+
+# Trois points indiquent la fin d'un document YAML
+...

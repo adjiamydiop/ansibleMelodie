@@ -35,7 +35,7 @@ la structure type d'un projet ansible simple est :
 
 ## 🧞 Commands
 
-
+`tar -xvzf "C:\Users\YV\Downloads\myWork.tar" -C C:\Users\YV\MesProjets\ansible\ansibleMelodie\SaveMyWork`
 ## ✨ Feedback & Suggestions
 
 

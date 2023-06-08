@@ -33,7 +33,7 @@ Celui ci peut se retrouver à plusieurs endroits,mais il est fortement conseill�
     - Nous allons utiliser la commande ansible-config pour connaître la configuration. 
     - Ouvrer un terminal sur Ubuntu-c avec le profil ansible/password.
     - Placer vous dans notre repertoire de travail.  
-    `cd ~/ansibleMelodie/myWork/TP01`
+    `cd ~/ansibleMelodie/myWork/TP02`
     - afficher le fichier de configuration utilisé.  
     `ansible-config --version`
     - afficher la configuration utilisée.  
