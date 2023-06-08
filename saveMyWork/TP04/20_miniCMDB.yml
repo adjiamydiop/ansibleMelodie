@@ -1,4 +1,15 @@
 ---
+- name: creation d'un dossier de travail
+  hosts: ubuntu-c
+  tasks: 
+    - name: creation d'un dossier /tmp
+      file:
+        state: absent
+        path: ~/tmp 
+    - name: creation d'un dossier /tmp
+      file:
+        state: directory
+        path: ~/tmp
 - name: tests de notre configuration.
   hosts: all
   tasks:
@@ -11,15 +22,6 @@
    - name: "Generate HTML report"
      template:
       src: templates/report.html.j2
-      dest: "$HOME/{{ inventory_hostname }}.html"       
-   - name: recup fact via setup
-     setup:
-      gather_subset:
-        - 'architecture'
-        - 'distribution'
-     register: myFacts
-   - name: affichage du nom de host
-     debug:
-      var: myFacts     
-
+      dest: "~/tmp/{{ inventory_hostname }}.html"   
+     delegate_to: ubuntu-c    
 ...

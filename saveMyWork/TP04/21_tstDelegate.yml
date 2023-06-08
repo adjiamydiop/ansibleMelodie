@@ -1,0 +1,23 @@
+---
+- name: tests de notre configuration.
+  hosts: all
+  tasks:
+    - name: affichage des gather_facts
+      debug:
+        var: ansible_facts
+    - name: affichage du nom de host
+      debug:
+        var: ansible_hostname  
+    - name: creation d'un dossier /tmp
+      file:
+        state: directory
+        path: ~/tmp
+      delegate_to: ubuntu-c   
+      run_once: true
+    - name: creation d'un fichier par localhost sur locahost
+      file:
+        state: touch
+        path: ~/tmp/{{ ansible_hostname }}.txt
+      delegate_to: ubuntu-c     
+
+...
