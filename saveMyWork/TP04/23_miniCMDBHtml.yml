@@ -18,15 +18,15 @@
         var: ansible_hostname  
     - name: "Generate HTML report"
       template:
-        src: templates/report.md.j2
-        dest: "~/tmp/{{ inventory_hostname }}.md"
+        src: templates/report.html.j2
+        dest: "~/tmp/{{ inventory_hostname }}.html"
 
 - name: download des rapports des machines hôtes
   hosts: managed
   tasks: 
     - name: recup é/tmp/*.html ==> localhost ~/tmp
       fetch:
-        src: "~/tmp/{{ inventory_hostname }}.md"
+        src: "~/tmp/{{ inventory_hostname }}.html"
         dest: ~/tmp
         flat: true
         validate_checksum: false         
