@@ -1,0 +1,27 @@
+---
+- name: creation d'un dossier de travail
+  hosts: ubuntu-c
+  tasks: 
+    - name: creation d'un dossier /tmp
+      file:
+        state: absent
+        path: ~/tmp 
+    - name: creation d'un dossier /tmp
+      file:
+        state: directory
+        path: ~/tmp
+- name: tests de notre configuration.
+  hosts: all
+  tasks:
+   - name: affichage des gather_facts
+     debug:
+      var: ansible_facts
+   - name: affichage du nom de host
+     debug:
+      var: ansible_hostname  
+   - name: "Generate HTML report"
+     template:
+      src: templates/report.html.j2
+      dest: "~/tmp/{{ inventory_hostname }}.html"   
+     delegate_to: ubuntu-c    
+...

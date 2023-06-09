@@ -1,27 +1,33 @@
 ---
 - name: creation d'un dossier de travail
-  hosts: ubuntu-c
+  hosts: all
   tasks: 
-    - name: creation d'un dossier /tmp
+    - name: suppression du dossier de travail ~/tmp (~ home)
       file:
         state: absent
         path: ~/tmp 
-    - name: creation d'un dossier /tmp
+    - name: creation du dossier de travail ~/tmp (~ home)
       file:
         state: directory
         path: ~/tmp
-- name: tests de notre configuration.
-  hosts: all
-  tasks:
-   - name: affichage des gather_facts
-     debug:
-      var: ansible_facts
-   - name: affichage du nom de host
-     debug:
-      var: ansible_hostname  
-   - name: "Generate HTML report"
-     template:
-      src: templates/report.html.j2
-      dest: "~/tmp/{{ inventory_hostname }}.html"   
-     delegate_to: ubuntu-c    
+    - name: affichage des gather_facts
+      debug:
+        var: ansible_facts
+    - name: affichage du nom de host
+      debug:
+        var: ansible_hostname  
+    - name: "Generate HTML report"
+      template:
+        src: templates/report.html.j2
+        dest: "~/tmp/{{ inventory_hostname }}.html"
+
+- name: download des rapports des machines hôtes
+  hosts: managed
+  tasks: 
+    - name: recup é/tmp/*.html ==> localhost ~/tmp
+      fetch:
+        src: "~/tmp/{{ inventory_hostname }}.html"
+        dest: ~/tmp
+        flat: true
+        validate_checksum: false         
 ...
