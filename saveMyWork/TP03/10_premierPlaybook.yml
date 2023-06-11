@@ -4,4 +4,15 @@
   tasks:
    - name: test de la connexion
      ping:
+   - name: affichage d'un message avec ma variable.
+     debug:
+      msg: Le contenu de ma variable est {{ maVariable }}. 
+
+- name: creation d'un dossier ~/tmp.
+  hosts: managed
+  tasks:
+    - name: ajout du dossier.
+      file:
+        state: directory
+        path: ~/tmp            
 ...
