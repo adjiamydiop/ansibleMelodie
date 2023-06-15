@@ -150,7 +150,7 @@ Il est donc important de bien fermer sa session le soir par exemple....
 1. puis fermer l’éditeur et le terminal  
 ![picture 19](../../images/4a7d66029f09ef07932cca53c99c158b58f0475da9f6d54e27ff182c1ed90983.png)  
 ![picture 21](../../images/de8913f53dca64e2accd82c9bc0794d4a95ddd2e6fd468fd95a9fa8ba39c5894.png)  
-### reprendre le travail en rouvrant un session  
+### reprendre le travail en rouvrant une session  
 1. [cloud shell](https://shell.cloud.google.com/?show=terminal)  
 1. relancer le lab
     - tapez la commande suivante dans le terminal  

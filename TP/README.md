@@ -31,11 +31,6 @@ Dans la seconde partie consacrée plus spécifiquement à l'IBMi, nous allons no
 
 ## Partie 2 - Ansible sur l'IBMi
 
- - [Exercise 2.1 - Introduction to Tower](2.1-intro/README.fr.md)
- - [Exercise 2.2 - Inventories, credentials and ad hoc commands](2.2-cred/README.fr.md)
- - [Exercise 2.3 - Projects & job templates](2.3-projects/README.fr.md)
- - [Exercise 2.4 - Surveys](2.4-surveys/README.fr.md)
- - [Exercise 2.5 - Role based access control](2.5-rbac/README.fr.md)
- - [Exercise 2.6 - Workflows](2.6-workflows/README.fr.md)
- - [Exercise 2.7 - Wrap up](2.7-wrap/README.fr.md)
+ - [TP05- hello IBMi](05_helloIBMi/)
+ 
 
