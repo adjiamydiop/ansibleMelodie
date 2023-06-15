@@ -201,9 +201,19 @@ devient
 `ansible-playbook 10_premierPlaybook.yml -i 00_inventory.yml` 
 
 1. premier lancement.
+![picture 3](../../images/af16b56cc3d2c1cf5df049179a112c4091cf52bb090b9b7cab5e0926c26c2b82.png)  
+
 1. second lancement.
-1. suppression sur `centos1` du dossier via la un commande ansible.
+![picture 4](../../images/6b54a6382c8989df854ef8f0a9009f050de595e9ecb009a6a44624b999806595.png)  
+
+1. suppression sur `centos1` du dossier.
+
+`ansible -i 00_inventory.yml centos1 -m ansible.builtin.file -a "path=~/tmp state=absent"`
+![picture 6](../../images/bc551a41d87eef4ef56d7e4a8e7df08fb79f82bef525ce6959e0accd85b432c4.png)  
+
+
 1. nouveau lancement
+![picture 5](../../images/21c4160a4f8c56b166b90ee7f8b28dbe46e603ab620ea670e7d2a62162f28df1.png)  
 
 
 
