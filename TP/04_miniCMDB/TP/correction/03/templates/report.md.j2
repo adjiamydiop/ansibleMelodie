@@ -1,0 +1,5 @@
+# Rapport du système {{ inventory_hostname }}
+
+| Interfaces IP  | Architecture          | OS | Nom du node |
+| :--------------- |:---------------:| :-----:| :----------:|
+| {{ ansible_default_ipv4.alias }}  |   {{ ansible_architecture }}       |  {{ ansible_distribution }} {{ ansible_distribution_major_version }} {{ ansible_distribution_release }} | {{ ansible_nodename }} | 

@@ -5,29 +5,29 @@
     - name: suppression du dossier de travail ~/tmp (~ home)
       file:
         state: absent
-        path: ~/tmp 
+        path: ~/tmp   
     - name: creation du dossier de travail ~/tmp (~ home)
       file:
         state: directory
-        path: ~/tmp
+        path: ~/tmp   
     - name: affichage des gather_facts
       debug:
-        var: ansible_facts
+        var: ansible_facts   
     - name: affichage du nom de host
       debug:
-        var: ansible_hostname  
+        var: ansible_hostname 
     - name: Génération du rapport en markdown 
       template:
         src: templates/report.md.j2
-        dest: "~/tmp/{{ inventory_hostname }}.md"
-
+        dest: "~/tmp/{{ inventory_hostname }}.md"   
 - name: download des rapports des machines hôtes
   hosts: managed
-  tasks: 
+  gather_facts: no  
+  tasks:  
     - name: recup é/tmp/*.html ==> localhost ~/tmp
       fetch:
         src: "~/tmp/{{ inventory_hostname }}.md"
         dest: ~/tmp
         flat: true
-        validate_checksum: false         
+        validate_checksum: false                       
 ...

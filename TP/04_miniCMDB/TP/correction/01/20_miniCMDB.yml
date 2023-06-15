@@ -1,0 +1,13 @@
+---
+- name: creation d'un dossier de travail
+  hosts: all
+  tasks: 
+    - name: suppression du dossier de travail ~/tmp (~ home)
+      file:
+        state: absent
+        path: ~/tmp   
+    - name: creation du dossier de travail ~/tmp (~ home)
+      file:
+        state: directory
+        path: ~/tmp               
+...

@@ -26,10 +26,8 @@ Dans la seconde partie consacrée plus spécifiquement à l'IBMi, nous allons no
  - [TP01 - Mise en place du Lab](01_MiseEnPlace_LAB/README.md)
  - [TP02 - Configurer Ansible](02_ConfigurerAnsible/README.md)
  - [TP03 - Écrire votre premier playbook](03_PremierPlaybook/README.md)
- - [TP04 - Utiliser des variables]()
- - [Exercise 1.5 - Conditionals, Handlers and Loops](1.5-handlers/README.fr.md)
- - [Exercise 1.6 - Templates](1.6-templates/README.fr.md)
- - [Exercise 1.7 - Roles](1.7-role/README.fr.md)
+ - [TP04 - Utiliser des variables](04_miniCMDB/README.md)
+
 
 ## Partie 2 - Ansible sur l'IBMi
 
