@@ -1,0 +1,27 @@
+---
+- name: tests de notre configuration.
+  hosts: all
+  collections:
+   - ibm.power_ibmi  
+  tasks:
+   - name: test de la connexion
+     ping:
+   - name: affichage d'un message avec ma variable.
+     debug:
+      msg: Le contenu de ma variable est {{ maVariable }}. 
+   - name: ajout du dossier.
+     file:
+      state: directory
+      path: ~/tmp    
+   - name: Display a system value
+     ibmi_sysval:
+      sysvalue:
+        - {'name':'qccsid'}
+     register: dspsysval_ccsid_result    
+   - name: affichage du resultat.
+     debug:
+      msg: Le contenu du dspsysval est {{ dspsysval_ccsid_result }}. 
+   - name: affichage du CCSID.
+     debug:
+      msg: Le contenu du CCSID est {{ dspsysval_ccsid_result.sysval[0].value }}. 
+...

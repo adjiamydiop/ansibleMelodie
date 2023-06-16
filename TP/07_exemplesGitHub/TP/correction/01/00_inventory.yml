@@ -1,0 +1,6 @@
+---
+control:
+  hosts:
+    armonie:
+      ansible_connection: local
+...
