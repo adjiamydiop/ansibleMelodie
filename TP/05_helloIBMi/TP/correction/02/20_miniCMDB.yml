@@ -1,0 +1,23 @@
+---
+- name: creation d'un dossier de travail
+  hosts: all
+  tasks: 
+    - name: suppression du dossier de travail ~/tmp (~ home)
+      file:
+        state: absent
+        path: ~/tmp   
+    - name: creation du dossier de travail ~/tmp (~ home)
+      file:
+        state: directory
+        path: ~/tmp   
+    - name: affichage des gather_facts
+      debug:
+        var: ansible_facts   
+    - name: affichage du nom de host
+      debug:
+        var: ansible_hostname 
+    - name: Génération du rapport en markdown 
+      template:
+        src: templates/report.md.j2
+        dest: "~/tmp/{{ inventory_hostname }}.md"   
+...
