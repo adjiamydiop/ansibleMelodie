@@ -15,8 +15,7 @@ Ainsi nous allons :
 - Installer les différentes extensions nécessaires (code for IBMi) via un profile gist ?
 - Ajouter un .profile et 
 - Ajouter des tachés en nous aidant des modules pour :.bashrc pour configurer votre shell sur l'IBMi.
-- Cloner le dépot ansibleMelodie sur votre home.
-- Installer la collection ibmi sur votre home.
+- Cloner le dépôt ansibleMelodie sur votre home.
 - Configurer Ansible (ansible.cfg) et tester via CLI.
 - Creation d'un inventaire en localhost (group_vars python3) et Test via le CLI
 - Appeler un playbook créé au chapitre précédant pour voir ...

@@ -1,9 +1,6 @@
 ---
 - name: creation d'un dossier de travail
   hosts: all
-  collections:
-   - ibm.power_ibmi  
-
   tasks: 
     - name: suppression du dossier de travail ~/tmp (~ home)
       file:
@@ -19,11 +16,6 @@
     - name: affichage du nom de host
       debug:
         var: ansible_hostname 
-    - name: Display a system value
-      ibmi_sysval:
-        sysvalue:
-          - {'name':'qccsid'}
-      register: dspsysval_ccsid_result    
     - name: Génération du rapport en markdown 
       template:
         src: templates/report.md.j2

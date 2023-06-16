@@ -32,5 +32,6 @@ Dans la seconde partie consacrée plus spécifiquement à l'IBMi, nous allons no
 ## Partie 2 - Ansible sur l'IBMi
 
  - [TP05- hello IBMi](05_helloIBMi/)
+ - [TP06- Du vrai IBMi](06_duVraiIBMi/README.md/)
  
 
