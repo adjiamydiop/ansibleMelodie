@@ -33,5 +33,5 @@ Dans la seconde partie consacrée plus spécifiquement à l'IBMi, nous allons no
 
  - [TP05- hello IBMi](05_helloIBMi/)
  - [TP06- Du vrai IBMi](06_duVraiIBMi/README.md/)
- 
+ - [TP07- Exemple GitHub](07_exemplesGitHub/README.md)
 
